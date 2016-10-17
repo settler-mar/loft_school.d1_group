@@ -9,10 +9,17 @@
 
 1. git clone https://github.com/settler-mar/loft_school.d1_group dz1
 2. cd dz1
-3. bower i
-4. npm i
+3. npm i
 
----
+>для работы sass-lint
+
+1. Установите Ruby
+2. Выполните команду
+```sh
+gem update --system && gem install scss_lint
+````
+
+---------
 
 >Сборка проекта
 

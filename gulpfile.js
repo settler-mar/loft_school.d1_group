@@ -22,6 +22,7 @@ $.gulp.task('default', $.gulp.series(
   'clean',
   $.gulp.parallel(
     'sass',
+    'sass.lint',
     'pug',
     'js:foundation',
     'js:process',
