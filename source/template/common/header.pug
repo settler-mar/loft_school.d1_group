@@ -3,13 +3,16 @@
     .social-links-wrapper
       ul.social-links
         li.social-links__item
-          a(href="https://vk.com/", class="social-links__item-link", target="_blank") vk.com
+          a(href="https://vk.com/", class="social-links__item-link", target="_blank")
+            span.link-text vk.com
             +icon('vk')
         li.social-links__item
-          a(href="https://github.com/", class="social-links__item-link", target="_blank") github.com
+          a(href="https://github.com/", class="social-links__item-link", target="_blank")
+            span.link-text github.com
             +icon('github')
         li.social-links__item
-          a(href="https://www.linkedin.com/", class="social-links__item-link", target="_blank") linkedin.com
+          a(href="https://www.linkedin.com/", class="social-links__item-link", target="_blank")
+            span.link-text linkedin.com
             +icon('in')
     .main-menu-wrapper
       .main-menu-button
@@ -24,13 +27,14 @@
             a(href="#", class=".main-menu-list__item-link") Обо мне
           li.main-menu-list__item
             a(href="#", class=".main-menu-list__item-link") Авторизация
-    .user-info-wrapper
-      +icon('portfolio_header')
-      .user-info
-        .user-info__user-image
-          img.user-info__user-image-file(src="/assets/img/user-image.png", alt="Владимир Астахов")
-        h1.user-info__user-name Владимир Астахов
-        h2.user-info__description Личный сайт вэб разработчика
-    .header__arrow-down-wrapper
-      a(href="#" class="header__arrow-down") Ссылка вниз
+  .user-info-wrapper
+    +icon('portfolio_header')
+    .user-info
+      .user-info__user-image
+        img.user-info__user-image-file(src="/assets/img/user-image.png", alt="Владимир Астахов")
+      .user-info__user-name Владимир Астахов
+      .user-info__description Личный сайт вэб разработчика
+    .arrow-down-wrapper
+      a(href="#" class="arrow-down")
+        span.link-text Ссылка вниз
         +icon('arrow_down')
