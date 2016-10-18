@@ -1,0 +1,34 @@
+block login
+- var navigation = {index: 'На главную', admin: 'Войти'}
+- var footer__text = "Подпись в футере"
+- var login__icon = "login.svg"
+- var password__icon = "password.svg"
+.wrapper
+    .login-content
+      .login-content__title Авторизуйтесь
+    form.authorization-form
+      label.authorization-form__form-item
+        img.authorization-form__login-icon(src=login__icon)
+        input.authorization-form__login-text(placeholder='Логин')
+      label.authorization-form__form-item
+        img.authorization-form__password-icon(src=password__icon)
+        input.authorization-form__password-text(placeholder='Пароль')
+      label.authorization-form__form-item
+        input(type='checkbox').authorization-form__not-a-robot
+      .authorization-form__radio-buttons
+        .authorization-form__question-text Вы точно не робот?
+        label.authorization-form__form-item
+          .authorization-form__radio-button
+            input(type='radio').authorization-form__yes-radio
+            span.authorization-form__space
+            span.authorization-form__yes-text Да
+        label.authorization-form__form-item
+          input(type='radio').authorization-form__no-radio
+          span.authorization-form__space
+          span.authorization-form__no-text Нет
+        .navigation-menu
+          ul.navigation-menu__list
+            each value,key in navigation
+              li.navigation-menu__item
+                a.navigation-menu__link(href=key + '.html') #{value}
+    footer.footer #{footer__text}
