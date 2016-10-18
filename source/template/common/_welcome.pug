@@ -1,26 +1,38 @@
 block welcome
-- var social__links = {vk: 'vk.com', github: 'github.com', linkedin: 'linkedin.com'}
+//-
+  Mixin to insert icons from the sprite
+  @param {string} name - id of element
+  @param {string|Array<string>} [mods] - additional classes
+  @example
+  +icon('mail', ['icon-20', 'icon-light'])
+mixin icon(name, mods)
+    - mods = mods || ''
+    svg(class="icon icon-" + name class=mods)
+        use(xlink:href="/assets/img/sprite.svg#" + name)
+
 - var navigation = {work: 'Мои работы', about: 'Обо мне', blog: 'Блог'}
-- var name__text = "Иванов Иван Иванович"
-- var name__description = "сайт портфолио"
-- var footer__text = "Подпись в футере"
-.wrapper
-    header.header
-        a(href="#").autorization-button Авторизуйтесь
-    .welcome-content
-        .my-foto
-            img.my-foto__logo-img(src="/assets/img/viking.png")
-        .my-name
-            h1.my-name__text #{name__text}
-            h3.my-name__description #{name__description}
-        .social-icons
-            ul.social-buttons__list
-                each value in social__links
-                    li.social-butoons__item
-                        a.social-butoons__link(href=value)
-        .navigation-menu
-            ul.navigation-menu__list
-                each value,key in navigation
-                    li.navigation-menu__item
-                        a.navigation-menu__link(href=key+'.html') #{value}
-    footer.footer #{footer__text}
+  .welcome-content
+    .my-foto
+      img.my-foto__logo-img(src="/assets/img/viking.png")
+    .my-name
+      h1.my-name__text Иванов Иван Иванович
+      h2.my-name__description сайт портфолио
+    .social-links-wrapper_welcome
+      ul.social-links
+        li.social-links__item
+          a(href="https://vk.com/", class="social-links__item-link", target="_blank")
+            span.link-text vk.com
+            +icon('vk')
+        li.social-links__item
+          a(href="https://github.com/", class="social-links__item-link", target="_blank")
+            span.link-text github.com
+            +icon('github')
+        li.social-links__item
+          a(href="https://www.linkedin.com/", class="social-links__item-link", target="_blank")
+            span.link-text linkedin.com
+            +icon('in')
+    .navigation-menu
+      ul.navigation-menu__list
+        each value,key in navigation
+          li.navigation-menu__item
+            a.navigation-menu__link(href=key+'.html') #{value}
