@@ -1,0 +1,19 @@
+.my_information
+  .my-foto
+    img.my-foto__logo-img(src= user_foto)
+  .my_information__block
+    if page_type == 'index'
+      h1.my_information__text= user_name
+      h2.my_information__description= site_description
+    else
+      .my_information__text= user_name
+      .my_information__description= site_description
+  if page_type == 'index'
+    - var social_mod='welcome'
+    include _social_button
+    +menu(navigation_index)
+  else
+    .arrow-down-wrapper
+      a(href="#" class="arrow-down")
+        span.link-text Ссылка вниз
+        +icon('arrow_down')
