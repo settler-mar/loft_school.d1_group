@@ -5,7 +5,6 @@
   @example
   +icon('mail', ['icon-20', 'icon-light'])
 mixin icon(name, mods)
-    - mods = mods || ''
-    svg(class="icon icon-" + name class=mods)
-        use(xlink:href="/assets/img/sprite.svg#" + name)
-
+  - mods = mods || ''
+  svg(class="icon icon-" + name class=mods)
+    use(xlink:href="/assets/img/sprite.svg#" + name)

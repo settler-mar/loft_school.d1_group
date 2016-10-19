@@ -1,0 +1,12 @@
+.header-wrapper
+  header.header
+    if page_type != 'index'
+      - var social_mod='header'
+      include _social_button
+      .main-menu-wrapper
+        .main-menu-button
+          span.main-menu-button__icon Toggle nav
+        +menu(navigation)
+    else
+      .login-content
+        a.login-content__title(href='#login') Авторизуйтесь
