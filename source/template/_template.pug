@@ -1,27 +1,19 @@
 block variables
-
+    - var user_name = 'Владимир Астаханов'
+    - var site_description = 'Личный сайт веб разработчика'
+    - var user_foto = "/assets/img/my_photo.jpg"
+include mixins/icons.pug
 doctype html
 html
-	head
-		meta(charset="utf-8")
-		title #{title}
-		meta(content="" name="author")
-		meta(content="" name="description")
-		meta(content="" name="keywords")
-		meta(content="width=device-width, initial-scale=1" name="viewport")
-		meta(content="ie=edge" http-equiv="x-ua-compatible")
-
-		//- favicon block start
-		//- favicon block end
-
-		link(rel='stylesheet' href='/assets/css/foundation.css')
-		link(rel='stylesheet' href='/assets/css/app.css')
-		script(src='/assets/js/foundation.js' defer)
-		script(src='/assets/js/app.js' defer)
-
-		<!--[if lt IE 9]>
-		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
-		<![endif]-->
-
-	body
-		block content
+    head
+        include common/head
+    body
+        .page-wrap(class='page-wrap_'+body_css)
+            if page_type == 'index'
+                a#autorisation.autorisation-target
+            include common/header
+            //include common/_my-infotmation
+            if page_type!='index'
+                div.content(class= "content_"+page_type)
+                    block content
+        include common/_footer
