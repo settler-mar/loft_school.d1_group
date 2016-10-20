@@ -1,0 +1,15 @@
+mixin slider_works(work_images)
+  ul.slider__list
+    each work_image in work_images
+      li.slider__item
+        .slider__left
+          img(src="assets/img/" + work_image, alt="works")
+        .slider__right
+          .slider__cotent
+            h3.slider__title Сайт школы онлайн Образования
+            ul.slider__skill-list
+              li.slier__skill-item HTML
+              li.slier__skill-item CSS
+              li.slier__skill-item JAVASCRIPT
+            .slider__button
+              a(href="#" target="_blank").slider__button-text Посмотреть сайт

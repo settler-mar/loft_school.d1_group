@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "author": "a.kalin",
   "license": "ISC",
-  "scripts": {
-    "postinstall": "bower install"
-  },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "browser-sync": "2.11.2",

@@ -1,0 +1,11 @@
+include ../mixins/_slider
+
+section.slider
+  .slider__container
+    +slider_works(["work-1.png", "work-2.png", "work-3.png", "work-4.png"])
+
+    .slider__control
+      a(href="#").slider__control-left
+        +icon('arrow_up')
+      a(href="#").slider__control-right
+        +icon('arrow_down')
