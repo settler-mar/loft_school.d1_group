@@ -21,6 +21,7 @@
 
   .social-links__icon {
     fill: rgba($white, .5);
+    transition: all linear .3s;
 
     &:hover {
       fill: $white;

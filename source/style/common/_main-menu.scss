@@ -5,32 +5,17 @@
   position: relative;
   width: 40px;
 
-  &::before {
-    background-color: $white;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    height: 5px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-
-  }
-
-  &::after {
-    background-color: $white;
-    border-radius: 2px;
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 5px;
-    position: absolute;
-    width: 100%;
+  &:hover {
+    .main-menu-button__icon,
+    .main-menu-button__icon::before,
+    .main-menu-button__icon::after {
+      background-color: $white;
+    }
   }
 }
 
 .main-menu-button__icon {
-  background-color: $white;
+  background-color: rgba($white, .5);
   border-radius: 2px;
   display: block;
   height: 5px;
@@ -38,6 +23,31 @@
   position: relative;
   text-indent: -9999px;
   top: 50%;
+  transition: all linear .3s;
+
+  &::before {
+    background-color: rgba($white, .5);
+    border-radius: 2px;
+    content: '';
+    display: block;
+    height: 5px;
+    position: absolute;
+    top: -15px;
+    transition: all linear .3s;
+    width: 100%;
+  }
+
+  &::after {
+    background-color: rgba($white, .5);
+    border-radius: 2px;
+    bottom: -15px;
+    content: '';
+    display: block;
+    height: 5px;
+    position: absolute;
+    transition: all linear .3s;
+    width: 100%;
+  }
 }
 
 .navigation-menu {
