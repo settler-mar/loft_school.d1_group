@@ -1,11 +1,11 @@
-mixin slider_works(work_images)
+mixin slider_works(work_images, activeItem)
   ul.slider__list
-    each work_image in work_images
-      li.slider__item
+    each work_image, ndx in work_images
+      li.slider__item(class=((ndx == activeItem) ? 'active' : '' ))
         .slider__left
           img(src="assets/img/" + work_image, alt="works")
         .slider__right
-          .slider__cotent
+          .slider__content
             h3.slider__title Сайт школы онлайн Образования
             ul.slider__skill-list
               li.slier__skill-item HTML
