@@ -1,0 +1,24 @@
+.login-content {
+  padding-top: 24px;
+  text-align: right;
+}
+
+.login-content__title {
+  border: 1px solid $white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: $white;
+  display: inline-block;
+  line-height: 44px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all linear .3s;
+  width: 180px;
+
+  &:hover {
+    background-color: $white;
+    border-color: $white;
+    color: $main_theme_color;
+  }
+}

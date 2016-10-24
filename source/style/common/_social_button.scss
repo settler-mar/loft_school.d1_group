@@ -1,0 +1,50 @@
+.social-links-wrapper--header {
+  float: left;
+  margin-left: 30px;
+  padding-top: 4px;
+
+  .social-links__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-links__item {
+    display: inline-block;
+    margin-left: 24px;
+    vertical-align: middle;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .social-links__icon {
+    fill: rgba($white, .5);
+    transition: all linear .3s;
+
+    &:hover {
+      fill: $white;
+    }
+  }
+
+  .social-links__text {
+    display: none;
+  }
+
+  .icon-vk {
+    height: 17px;
+    width: 31px;
+  }
+
+  .icon-github {
+    height: 22px;
+    width: 26px;
+  }
+
+  .icon-in {
+    height: 22px;
+    width: 24px;
+  }
+
+}
