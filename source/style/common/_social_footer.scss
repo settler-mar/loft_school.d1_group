@@ -1,0 +1,27 @@
+.social-links__wrapper{
+  float: right;
+  margin: 17px -5px 0 0;
+}
+.social-links__item{
+  float: left;
+  margin: 0 5px 5px;
+}
+.icon-vk_round,.icon-github_round,.icon-in_round{
+  fill: $social_icon;
+}
+.icon-vk_round:hover,.icon-github_round:hover,.icon-in_round:hover{
+  fill: $white;
+  transition: .2s;
+}
+.icon-vk_round{
+  width: 36px;
+  height: 36px;
+}
+.icon-github_round{
+  width: 36px;
+  height: 36px;
+}
+.icon-in_round{
+  width: 36px;
+  height: 36px;
+}

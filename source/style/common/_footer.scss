@@ -1,83 +1,51 @@
 .footer{
-	height: 147px;
-	background: rgba(55,62,66,.8);
-
-
-	.footer__menu-wrapper{
-		float: left;
-	}
-	.footer__box{
-		overflow: hidden;
-		height: 72px;
-		border-bottom: 1px solid #63686b;
-
-		.footer__box-container{
-			margin: 0 30px;
-		}
-	}
-	.main-menu__item{
-		float: left;
-		margin-right: 40px;
-	}
-	.main-menu__item:last-child{
-		margin-right: 0;
-	}
-	.main-menu__link{
-		color: #fff;
-		font-size: 16px;
-		font-weight: 500;
-		line-height: 75px;
-		text-decoration: none;
-	}
-	.main-menu__link:hover{
-		color: #949799;
-	}
-
-	.social-links__wrapper{
-		float: right;
-		margin: 17px -5px 0 0;
-	}
-	.social-links__item{
-		float: left;
-		margin: 0 5px 5px;
-
-		.icon-vk_round,.icon-github_round,.icon-in_round{
-			fill: #7f8386;
-		}
-		.icon-vk_round:hover,.icon-github_round:hover,.icon-in_round:hover{
-			fill: #fff;
-			transition: .2s;
-		}
-		.icon-vk_round{
-			width: 36px;
-			height: 36px;
-		}
-		.icon-github_round{
-			width: 36px;
-			height: 36px;
-		}
-		.icon-in_round{
-			width: 36px;
-			height: 36px;
-		}
-	}
-	.footer-descript{
-		float: left;
-		font-size: 16px;
-		line-height: 23px;
-		color: #949799;
-		max-width: 500px;
-		margin-top: 12px;
-	}
-	.footer-copyright{
-		float: right;
-		font-size: 16px;
-		color: #859494;
-		margin-top: 28px;
-	}
+    height: 147px;
+    background: rgba($footer_bg,.8);
 }
-.footer ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.footer__menu-wrapper{
+  float: left;
+}
+.footer__box{
+  overflow: hidden;
+  height: 72px;
+  border-bottom: 1px solid $footer_box_border;
+}
+.footer__box-container{
+  margin: 0 30px;
+}
+.main-menu__list,.social-links{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-menu__item{
+  float: left;
+  margin-right: 40px;
+}
+.main-menu__item:last-child{
+  margin-right: 0;
+}
+.main-menu__link{
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 75px;
+  text-decoration: none;
+}
+.main-menu__link:hover{
+  color: $footer_link_hover;
+}    
+.footer__descript{
+  float: left;
+  font-size: 16px;
+  line-height: 23px;
+  color: $footer_descript;
+  max-width: 500px;
+  margin-top: 12px;
+}
+.footer__copyright{
+  float: right;
+  font-size: 16px;
+  color: $footer_copyright;
+  margin-top: 28px;
 }
