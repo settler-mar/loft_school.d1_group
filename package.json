@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp-scss-lint": "^0.4.0",
     "gulp-stylus": "^2.5.0",
     "gulp.spritesmith": "^6.2.1",
     "jquery": "^3.1.1",
