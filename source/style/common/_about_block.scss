@@ -1,0 +1,238 @@
+.triangle__left-side {
+  fill: $about_block_left;
+}
+
+.triangle__right-side {
+  fill: $about_block_right;
+}
+
+.triangle {
+  margin-bottom: -4px;
+}
+
+.about-block-content {
+  background: linear-gradient(to right, $about_block_left 0%, $about_block_left 50%, $about_block_right 50%, $about_block_right 100%);
+  position: relative;
+}
+
+.container {
+  @extend %clearfix;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.about-block__left,
+.about-block__right {
+  float: left;
+  width: 50%;
+}
+
+.page-header {
+  height: 120px;
+  margin: auto;
+  margin-right: 120px;
+  position: relative;
+  width: 358px;
+}
+
+.page-header__text {
+  color: $h1_color;
+  font-family: 'bernier_regularregular', sans-serif;
+  font-size: 63px;
+  left: 0;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  top: 0;
+
+  &::before {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    left: 47px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+  }
+
+  &::after {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    margin-top: -3px;
+    position: absolute;
+    right: 44px;
+    top: 50%;
+    width: 22px;
+  }
+}
+
+.about-header-icon {
+  fill: rgba($icon_about_header, .07);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -34px;
+  width: 358px;
+}
+
+.user-image {
+  margin: auto;
+  margin-bottom: 28px;
+  width: 444px;
+}
+
+.user-image__file {
+  width: 100%;
+}
+
+.page-title {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.page-title__text {
+  color: $h2_color;
+  display: inline-block;
+  font-family: 'bernier_regularregular', sans-serif;
+  font-size: 35px;
+  left: 0;
+  margin: 0;
+  position: relative;
+  top: 0;
+
+  &::before {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    left: -56px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+  }
+
+  &::after {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    margin-top: -3px;
+    position: absolute;
+    right: -56px;
+    top: 50%;
+    width: 22px;
+  }
+}
+
+.about-block__left-content {
+  color: $h2_color;
+  font-family: 'robotoregular', sans-serif;
+  line-height: 1.5;
+  margin: auto;
+  margin-bottom: 36px;
+  width: 444px;
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.page-title__block-right {
+  margin-bottom: 28px;
+  padding-top: 10px;
+}
+
+.page-title__text__right {
+  &::before {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    left: -44px;
+    margin-top: -3px;
+    position: absolute;
+    top: 21px;
+    width: 22px;
+  }
+
+  &::after {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    margin-top: -3px;
+    position: absolute;
+    right: -34px;
+    top: 21px;
+    width: 22px;
+  }
+}
+
+.about-user__description {
+  color: $h2_color;
+  font-family: 'robotoregular', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 48px;
+  margin-left: 35px;
+}
+
+.skills-wrapper {
+  margin-left: 35px;
+}
+
+.skills-title {
+  color: $h2_color;
+  font-family: 'robotomedium', sans-serif;
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.skills-list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.skills-list-item {
+  display: inline-block;
+  height: 112px;
+  margin-right: 30px;
+  position: relative;
+  width: 112px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.skill-diagram {
+  border-radius: 50%;
+  display: block;
+  height: 100%;
+  transform: rotate(-90deg);
+  width: 100%;
+
+  .circle {
+    background: transparent;
+    fill: $skill_graph_color_light;
+    stroke: rgba($skill_graph_color, .93);
+    stroke-width: 40px;
+  }
+
+  .circle-inner {
+    fill: $about_block_right;
+  }
+}
+
+.skill-name {
+  color: $main_theme_color;
+  display: block;
+  font-family: 'robotomedium', sans-serif;
+  font-size: 12px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

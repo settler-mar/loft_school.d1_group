@@ -1,4 +1,17 @@
+%clearfix {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
 @import 'color';
 @import 'common/header';
 @import 'common/social_button';
 @import 'common/main-menu';
+@import 'common/about_block';

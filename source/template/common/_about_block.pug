@@ -1,0 +1,82 @@
+section.about-block
+  svg(class="triangle" viewBox="0 0 1000 86" preserveAspectRatio="none")
+    polygon(class="triangle__left-side" points="0,0 0,86 500.8,86 500,84" fill="none")
+    polygon(class="triangle__right-side" points="1000,00 1000,86 500,86 500,84" fill="none")
+  .about-block-content
+    .container
+      .about-block__left
+        .page-header
+          h1.page-header__text Обо мне
+          +icon('about_header', 'about-header-icon')
+        .user-image
+          img.user-image__file(src="/assets/img/user-image-about.jpg", alt="User Picture")
+        .page-title
+          h2.page-title__text Кто я
+        .about-block__left-content
+          p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+          p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+      .about-block__right
+        .page-title.page-title__block-right
+          h2.page-title__text.page-title__text__right.
+            Чем я могу быть
+            </br> вам полезен
+        .about-user__description
+          p.
+            Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+        .skills-wrapper
+          h2.skills-title Frontend
+          ul.skills-list
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name HTML5
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name CSS3
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name JavaScript</br>&amp jQuery
+          h2.skills-title Backend
+          ul.skills-list
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name PHP
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name MySQL
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name Node.js</br>&amp npm
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name Mongo.db
+          h2.skills-title WorkFlow
+          ul.skills-list
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name Git
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name Gulp
+            li.skills-list-item
+              svg(class="skill-diagram")
+                circle(class="circle" r="56" cx="56" cy="56"  stroke-dasharray="327.36 352")
+                circle(class="circle-inner" r="36" cx="56" cy="56")
+              span.skill-name Bower
