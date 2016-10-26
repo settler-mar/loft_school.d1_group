@@ -8,10 +8,10 @@
 }
 .icon-vk_round,.icon-github_round,.icon-in_round{
   fill: $social_icon;
-}
-.icon-vk_round:hover,.icon-github_round:hover,.icon-in_round:hover{
-  fill: $white;
-  transition: .2s;
+  &:hover{
+    fill: $white;
+    transition: all linear 0.3s;
+  }
 }
 .icon-vk_round{
   width: 36px;

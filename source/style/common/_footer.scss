@@ -1,6 +1,6 @@
 .footer{
-    height: 147px;
-    background: rgba($footer_bg,.8);
+  height: 147px;
+  background: rgba($footer_bg,.8);
 }
 .footer__menu-wrapper{
   float: left;
@@ -31,10 +31,13 @@
   font-weight: 500;
   line-height: 75px;
   text-decoration: none;
+  &:hover{
+    color: $footer_link_hover;
+  }
 }
-.main-menu__link:hover{
-  color: $footer_link_hover;
-}    
+.social-links__text{
+  color: $white;
+}
 .footer__descript{
   float: left;
   font-size: 16px;
