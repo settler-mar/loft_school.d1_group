@@ -1,0 +1,27 @@
+.social-links__wrapper {
+  float: right;
+  margin: 17px -5px 0 0;
+}
+
+.social-links__item {
+  float: left;
+  margin: 0 5px 5px;
+}
+
+.icon-github__round,
+.icon-in__round,
+.icon-vk__round {
+  height: 36px;
+  width: 36px;
+}
+
+.icon-vk__round,
+.icon-github__round,
+.icon-in__round {
+  fill: $social_icon;
+
+  &:hover {
+    fill: $white;
+    transition: all linear .3s;
+  }
+}
