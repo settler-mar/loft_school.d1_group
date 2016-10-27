@@ -5,7 +5,7 @@
 Груповая разработка
 
 ---
->Инструкция по установке моего проекта
+> Инструкция по установке моего проекта
 
 1. git clone https://github.com/settler-mar/loft_school.d1_group dz1
 2. cd dz1
@@ -21,7 +21,7 @@ gem update --system && gem install scss_lint
 
 ---------
 
->Сборка проекта
+> Сборка проекта
 
 ```sh
 gulp
