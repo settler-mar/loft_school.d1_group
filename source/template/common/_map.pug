@@ -1,0 +1,21 @@
+section.map-block
+  img.map(src="/assets/img/1200x973-map.jpg", alt="map")
+  .contacts-block
+    h2.contacts-block__title Контакты
+    ul.contacts-block-list
+      li.contacts-block-list__item
+        a(href="skype:skype_kdn?chat", class="contacts-block-list__item-link")
+          +icon('skype','contact-skype')
+          span.contact-text skype_kdn
+      li.contacts-block-list__item
+        a(href="mailto:astahov@gmail.com", class="contacts-block-list__item-link")
+          +icon('envelope','contact-email')
+          span.contact-text astahov@gmail.com
+      li.contacts-block-list__item
+        a(href="tel:+79312009324", class="contacts-block-list__item-link")
+          +icon('phone','contact-phone')
+          span.contact-text +7 931 200 93 24
+      li.contacts-block-list__item
+        a(href="https://goo.gl/maps/CPh9Ca", class="contacts-block-list__item-link", target="_blank")
+          +icon('map_marker','contact-address')
+          span.contact-text г.Новосибирск, ул. Инская, д. 5
