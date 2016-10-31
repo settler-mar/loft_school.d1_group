@@ -17,8 +17,8 @@ html
       if page_type == 'index'
         a#login.login-target
       include common/_header
-        .welcome
-          include common/_welcome
+      .welcome
+        include common/_welcome
         if page_type=='index'
           include common/_login
       if page_type!='index'

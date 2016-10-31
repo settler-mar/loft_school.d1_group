@@ -1,0 +1,60 @@
+.welcome{
+  position: relative;
+  height: 80vh;
+  background: url("/assets/img/1200x500-header-bg.jpg") 100% 100% no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.my_information{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  color: #fff;
+  top: 50%;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -200px;
+  text-align: center;
+}
+.my-foto{
+  margin: auto;
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50% 50%;
+  overflow: hidden;
+}
+.my-foto__logo-img{
+  width: 100%;
+}
+.my_information__text{
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: Roboto-Medium;
+}
+.my_information__description{
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-family: Roboto-Light;
+}
+.arrow-down-wrapper{
+  margin: auto;
+  margin-top: 6rem;
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+.link-text{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-indent: -9999px;
+}
+.icon-arrow_down{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 25px;
+  color:#fff;
+}
