@@ -1,0 +1,32 @@
+section.what-about
+  .what-about__header
+    +icon('about_header', 'about-icon')
+    h2.what-about__header-text Что обо мне </br> говорят
+  .what-about__comments
+    .what-about__comments-item
+      .what-about__comments-item-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+      .comments-item__comment-autor
+        img.comment-autor-image-file(src="/assets/img/kovald.png", alt="User Picture")
+        .comment-autor-data
+          .comment-autor-name Ковальчук Дмитрий
+          .comment-autor-description  основатель Loftschool
+    .what-about__comments-item
+      .what-about__comments-item-text Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+      .comments-item__comment-autor
+        img.comment-autor-image-file(src="/assets/img/zar.png", alt="User Picture")
+        .comment-autor-data
+          .comment-autor-name Зар Захаров
+          .comment-autor-description  преподаватель
+  .what-about__contact
+    h2.what-about__contact-title  Связаться со мной
+    form.what-about__contact-form
+      input(class="contact-form-input", type="text", placeholder="Имя")
+      input(class="contact-form-input", type="text", placeholder="Email")
+      textarea(class="contact-form-textarea", rows="6", placeholder="Ваше сообщение")
+    .what-about__contact-buttons
+      a.contact-button(href="#")  Отправить
+      a.contact-button(href="#")  Очистить
+  .arrow-up-wrapper
+    a(href="#" class="arrow-up")
+      span.link-text Ссылка вверх
+      +icon('arrow_up', 'arrow-up-icon')
