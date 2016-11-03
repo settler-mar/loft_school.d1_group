@@ -1,0 +1,208 @@
+.what-about {
+  background: url('/assets/img/1200x1083-works-footer-bg.jpg');
+  background-position: 0 228px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 66px;
+  padding-top: 90px;
+  position: relative;
+  width: 100%;
+}
+
+.what-about__header {
+  margin-bottom: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.about-icon {
+  fill: rgba($icon_about_header, .06);
+  height: 174px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.what-about__header-text {
+  color: $what_about_header_text;
+  display: inline-block;
+  font-family: 'bernier_regularregular', sans-serif;
+  font-size: 63px;
+  left: 0;
+  margin: 0;
+  position: relative;
+  top: 30px;
+
+  &::before {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    left: -40px;
+    margin-top: -3px;
+    position: absolute;
+    top: 36px;
+    width: 22px;
+  }
+
+  &::after {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    margin-top: -3px;
+    position: absolute;
+    right: -28px;
+    top: 36px;
+    width: 22px;
+  }
+}
+
+.what-about__comments {
+  display: flex;
+  margin: 0 auto 64px;
+  width: 800px;
+}
+
+.what-about__comments-item {
+  display: inline-block;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-top: 36px;
+  position: relative;
+  width: 50%;
+}
+
+.what-about__comments-item-text {
+  color: $main_content_text_color;
+  line-height: 1.5;
+  margin-bottom: 23px;
+}
+
+.comment-autor-data {
+  color: $comment_autor_data;
+  display: inline-block;
+  line-height: 1.5;
+  margin-left: 18px;
+  margin-top: 14px;
+  vertical-align: top;
+}
+
+.comment-autor-name {
+  font-family: 'robotobold', sans-serif;
+}
+
+.what-about__contact {
+  background-color: rgba($contacts_form_input_bg, .2);
+  border-radius: 5px;
+  margin: 0 auto 70px;
+  text-align: center;
+  width: 380px;
+}
+
+.what-about__contact-title {
+  color: $what_about_header_text;
+  display: inline-block;
+  font-family: 'bernier_regularregular', sans-serif;
+  font-size: 35px;
+  left: 0;
+  margin: 0;
+  margin-bottom: 52px;
+  position: relative;
+  top: 30px;
+
+  &::before {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    left: -40px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+  }
+
+  &::after {
+    background-color: rgba($h1_color, .2);
+    content: '';
+    height: 5px;
+    margin-top: -3px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    width: 22px;
+  }
+}
+
+.what-about__contact-form {
+  margin-bottom: 6px;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  background-color: $contacts_form_input_bg;
+  border-color: transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  min-height: 45px;
+  padding: 0 20px;
+  width: 340px;
+}
+
+.contact-form-textarea {
+  padding: 12px 20px 18px;
+}
+
+.what-about__contact-buttons {
+  background-color: $contact_button_bg;
+  border-radius: 0 0 5px 5px;
+  display: table;
+  height: 45px;
+  width: 100%;
+}
+
+.contact-button {
+  border-right: 1px solid rgba($contact_button_border, .5);
+  color: $contact_button_text;
+  display: table-cell;
+  text-decoration: none;
+  vertical-align: middle;
+
+  &:first-child:hover {
+    background-color: $contact_button_hover_bg;
+    border-radius: 0 0 0 5px;
+  }
+
+  &:last-child:hover {
+    background-color: $contact_button_hover_bg;
+    border-radius: 0 0 5px;
+  }
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.arrow-up-wrapper {
+  .link-text {
+    display: none;
+  }
+
+  .arrow-up-icon {
+    fill: rgba($contacts_form_input_bg, .7);
+    height: 16px;
+    transition: all linear .3s;
+    width: 26px;
+  }
+}
+
+.arrow-up {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+
+  &:hover {
+    .arrow-up-icon {
+      fill: $contacts_form_input_bg;
+    }
+  }
+}
